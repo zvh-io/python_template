@@ -1,0 +1,4 @@
+[tool.black]
+line-length = 88
+# As of December 2020, black doesn't accept py39
+target-version = ["py38"]

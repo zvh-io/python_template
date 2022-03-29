@@ -1,0 +1,2 @@
+EXPORT PYTEST_THEME = "zenburn"
+EXPORT PYTEST_THEME_MODE = "dark"
