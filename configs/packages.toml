@@ -2,17 +2,44 @@
 python = "^3.8"
 
 [tool.poetry.dev-dependencies]
+## Build tools
+cython
+flit
+packaging
+pyroma
+setuptools
+setuptools-scm
+twine
+wheel
+
 ## Code formatting
 black
 docformatter
 isort
 
+## Code instrumentation
+line_profiler
+psutil
+pyinstrument
+py-spy
+
+## Code metrics
+coverage
+mccabe
+prospector
+radon
+xenon
+
 ## Code refactoring
+MonkeyType
 pyannotate
+pyupgrade
+rope
 
 ## Code security
 atheris
 bandit
+dodgy
 safety
 
 ## Code style
@@ -24,6 +51,7 @@ pycodestyle
 pyflakes
 pylint
 pylint-flask
+unimport
 
 # Flake8 plugins
 cohesion
@@ -88,9 +116,35 @@ releases
 Sphinx
 
 # Sphinx plugins
+sphinx-autobuild
+sphinx-autodoc-annotation
 sphinx-autodoc-typehints
+sphinx-git
+sphinx-gitstamp
+sphinx-intl
+sphinx-me
+sphinx-needs
+sphinx-prompt 
+sphinx-pyreverse
+sphinx-sitemap
+sphinxcontrib-autoprogram
+sphinxcontrib-blockdiag
+sphinxcontrib-docbookrestapi
+sphinxcontrib-fulltoc
+sphinxcontrib-httpdomain
+Sphinxcontrib-packages
+sphinxcontrib-programoutput
+Sphinxcontrib-proof
+
+
+# Sphinx themes
+Pallets-Sphinx-Themes
+sphinx-better-theme
 sphinx-bootstrap-theme
+sphinx-nameko-theme
+sphinx-readable-theme
 sphinx-rtd-theme
+sphinxjp.themes.basicstrap
 
 ## Logging
 better-exceptions

@@ -19,7 +19,6 @@ classifiers = [
 "Topic :: Software Development :: Code Generators",
 ]
 
-
 [tool.poetry.dependencies]
 python = "^3.8"
 

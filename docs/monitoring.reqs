@@ -1,0 +1,10 @@
+opentelemetry-api
+opentelemetry-exporter-{exporter}
+opentelemetry-instrumentation-{instrumentation}
+opentelemetry-propagator-{propagator}
+opentelemetry-python
+opentelemetry-sdk
+opentracing-python
+prometheus_client
+scalene
+sentry-sdk
