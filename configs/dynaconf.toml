@@ -1,0 +1,38 @@
+# Dynaconf configuration
+# https://www.dynaconf.com/configuration/
+
+auto_cast = true
+commentjson_enabled = false
+core_loaders = ['YAML', 'TOML', 'INI', 'JSON', 'PY']
+default_env = 'default'
+dotenv_override = false
+dotenv_path = ''
+dotenv_verbose = false
+encoding = 'utf-8'
+environments = true
+envvar = 'SETTINGS_FILE_FOR_DYNACONF'
+envvar_prefix = 'DYNACONF'
+## env variable set via environmental variable 'ENV_FOR_DYNACONF'
+env_switcher = 'ENV_FOR_DYNACONF'
+## force_env only set if required for testing
+fresh_vars = []
+includes = []
+loaders = ['dynaconf.loaders.env_loader']
+load_dotenv = true
+lowercase_read = true
+merge_enabled = false
+nested_separator = '__'
+preload = []
+redis_enabled = false
+redis = {}
+root_path = ''
+secrets = ''
+settings_files = []
+filtering_strategy = []
+skip_files = []
+validators = []
+vault_enabled = false
+vault = {}
+yaml_loader = 'full_load'
+
+
