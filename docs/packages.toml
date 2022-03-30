@@ -1,0 +1,184 @@
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+## Build tools
+cython = ""
+flit = ""
+packaging = ""
+pyroma = ""
+setuptools = ""
+setuptools-scm = ""
+twine = ""
+wheel = ""
+
+## Code formatting
+black = ""
+docformatter = ""
+isort = ""
+
+## Code instrumentation
+line_profiler = ""
+psutil = ""
+pyinstrument = ""
+py-spy = ""
+
+## Code metrics
+coverage = ""
+mccabe = ""
+prospector = ""
+radon = ""
+xenon = ""
+
+## Code refactoring
+MonkeyType = ""
+pyannotate = ""
+pyupgrade = ""
+rope = ""
+
+## Code security
+atheris = ""
+bandit = ""
+dodgy = ""
+safety = ""
+
+## Code style
+darglint = ""
+flake8 = ""
+flakeheaven = ""
+mypy = ""
+pycodestyle = ""
+pyflakes = ""
+pylint = ""
+pylint-flask = ""
+unimport = ""
+
+# Flake8 plugins
+cohesion = ""
+dlint = ""
+flake8-annotations = ""
+flake8-bandit = ""
+flake8-broken-line = ""
+flake8-bugbear = ""
+flake8-builtins = ""
+flake8-coding = ""
+flake8-comprehensions = ""
+flake8-dashboard = ""
+flake8-debugger = ""
+flake8-docstrings = ""
+flake8-eradicate = ""
+flake8-executable = ""
+flake8-fixme = ""
+flake8-functions-names = ""
+flake8-logging-format = ""
+flake8-multiline-containers = ""
+flake8-pep3101 = ""
+flake8-pie = ""
+flake8-pytest-style = ""
+flake8-return = ""
+flake8-rst = ""
+flake8-rst-docstrings = ""
+flake8-quotes = ""
+flake8-simplify = ""
+flake8-SQL = ""
+flake8-todos = ""
+flake8-type-checking = ""
+flake8-variables-names = ""
+pandas-vet = ""
+pydantic = ""
+pydocstyle = ""
+
+## Configuration management
+check-manifest = ""
+docker-compose = ""
+dynaconf = ""
+envparse = ""
+python-dotenv = ""
+
+## Continuous integration
+commitizen = ""
+pre-commit = ""
+tox = ""
+
+## Debugging
+hunter = ""
+snoop = ""
+
+## Document comprehensions
+Jinja2 = ""
+toml = ""
+
+## Documentation
+breathe = ""
+interrogate = {extras = ["png"], version = ""}
+numpydoc = ""
+releases = ""
+Sphinx = ""
+
+# Sphinx plugins
+sphinx-autobuild = ""
+sphinx-autodoc-annotation = ""
+sphinx-autodoc-typehints = ""
+sphinx-git = ""
+sphinx-gitstamp = ""
+sphinx-intl = ""
+sphinx-me = ""
+sphinx-needs = ""
+sphinx-prompt  = ""
+sphinx-pyreverse = ""
+sphinx-sitemap = ""
+sphinxcontrib-autoprogram = ""
+sphinxcontrib-blockdiag = ""
+sphinxcontrib-docbookrestapi = ""
+sphinxcontrib-fulltoc = ""
+sphinxcontrib-httpdomain = ""
+Sphinxcontrib-packages = ""
+sphinxcontrib-programoutput = ""
+Sphinxcontrib-proof = ""
+
+
+# Sphinx themes
+Pallets-Sphinx-Themes = ""
+sphinx-better-theme = ""
+sphinx-bootstrap-theme = ""
+sphinx-nameko-theme = ""
+sphinx-readable-theme = ""
+sphinx-rtd-theme = ""
+
+## Logging
+better-exceptions = ""
+devtools = {extras = ["pygments"], version = ""}
+multistructlog = ""
+pretty-errors = ""
+Pygments = ""
+rich = ""
+structlog = ""
+structlog-pretty = ""
+
+## Testing
+datamodel-code-generator = ""
+deal = {extras = ["all"], version = ""}
+Faker = ""
+hypothesis = ""
+hypothesis-csv = ""
+hypothesis-fspaths = ""
+pytest = ""
+splinter = ""
+
+# Pytest plugins
+pytest-asyncio = ""
+pytest-bdd = ""
+pytest-benchmark = ""
+pytest-datadir = ""
+pytest-docker = ""
+pytest-flake8 = ""
+pytest-html = ""
+pytest-lazy-fixture = ""
+pytest-mock = ""
+pytest-mypy = ""
+pytest-randomly = ""
+pytest-splinter = ""
+pytest-structlog = ""
+pytest-testinfra = ""
+pytest-testmon = ""
+pytest-tornado = ""
