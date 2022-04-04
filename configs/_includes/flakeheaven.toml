@@ -1,14 +1,7 @@
-[tool.flake8]
-max-line-length = 88
-select = ["C, E, F, W, B, B950"]
-extend-ignore = ["E203, E501"]
-
-
 [tool.flakeheaven]
-max_line_length = 88
+max_line_length = {{ cookiecutter.line_length }}
 format = "grouped"
 show_source = true
-
 
 [tool.flakeheaven.plugins]
 cohesion = ["+*"]
@@ -46,8 +39,3 @@ pandas-vet = ["+*"]
 pycodestyle = ["+*"]
 pyflakes = ["+*", "-F401"]
 pylint = ["+*"]
-
-
-
-
-

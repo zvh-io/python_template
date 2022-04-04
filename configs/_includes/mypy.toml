@@ -1,5 +1,5 @@
 [tool.mypy]
-python_version = 3.8
+python_version = {{ cookiecutter.project_python_version }}
 check_untyped_defs = true
 strict_optional = true
 warn_unused_configs = true

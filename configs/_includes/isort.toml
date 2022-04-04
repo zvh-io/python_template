@@ -1,6 +1,6 @@
 [tool.isort]
 profile = "black"
-line_length = 88
+line_length = {{ cookiecutter.line_length }}
 include_trailing_comma = true
 use_parentheses = true
 force_single_line = true
@@ -25,4 +25,3 @@ known_local_folder = []
 src_paths = ["src", "tests"]
 color_output = true
 star_first = true
-

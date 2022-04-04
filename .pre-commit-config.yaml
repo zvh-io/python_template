@@ -1,62 +1,52 @@
-# Check out https://pre-commit.com/ for documentation
-# and https://pre-commit.com/hooks.html for more hooks
-minimum_pre_commit_version: 2.13.0
-# Don't set language_version -- it's only useful if we have multiple
-# python versions or our build uses a different env than runtime
 repos:
-  # --- Meta hooks ---
-  #- hooks:
-  # This one is useful, but it will fail if, e.g., you don't have a single yaml file
-  #  - id: check-hooks-apply
-  # This one will fail, e.g., if you don't have a recipes/ file, which is excluded here
-  #   - id: check-useless-excludes
-  #  repo: meta
-
-  # --- Built-in hooks --
-  - hooks:
-      - id: check-symlinks
-      - id: check-case-conflict
-      - id: fix-byte-order-marker
-      - id: end-of-file-fixer
-      - id: check-merge-conflict
-      - id: check-toml
-      - id: check-json
-      # This one is slow and doesn't check for much
-      # - detect-private-key
-      # This is very slow, so I recommend disabling it.
-      #- id: check-added-large-files
-      # The Conda recipe meta.yaml files are actually templates, not valid YAML
-      - id: check-yaml
-        exclude: ^recipes/.*
-    repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.0.1
-
-  # --- Commit msg checks ---
-  - hooks:
-      - id: commitizen
-        stages: ["commit-msg"]
-    repo: https://github.com/commitizen-tools/commitizen
-    rev: v2.17.8
-
-  # --- Strip output from .ipynb files ---
-  - hooks:
-      - id: nbstripout
-        files: ".ipynb"
-    repo: https://github.com/kynan/nbstripout
-    rev: 0.3.9
-
-  # --- Linters ---
-  - hooks:
-      - id: dockerfile_lint
-    repo: https://github.com/Lucas-C/pre-commit-hooks-nodejs
-    rev: v1.1.1
-  - hooks:
-      - id: black
-    repo: https://github.com/psf/black
-    rev: 21.5b1
-  - repo: https://github.com/pre-commit/mirrors-prettier
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.1.0
     hooks:
-      - id: prettier
-        stages: [commit]
-        exclude: ^recipes/.*
-    rev: v2.2.1
+ #    -   id: check-builtin-literals
+    -   id: check-case-conflict
+#    -   id: check-docstring-first
+    -   id: check-executables-have-shebangs
+    -   id: check-merge-conflict
+    -   id: check-shebang-scripts-are-executable
+    -   id: check-symlinks
+    -   id: end-of-file-fixer
+    -   id: fix-byte-order-marker
+    -   id: fix-encoding-pragma
+    -   id: mixed-line-ending
+
+-   repo: https://github.com/pre-commit/pygrep-hooks
+    rev: v1.9.0 
+    hooks:      
+    -   id: python-check-blanket-noqa
+    -   id: python-check-blanket-type-ignore 
+    -   id: python-check-mock-methods
+    -   id: python-no-eval
+    -   id: python-no-log-warn
+    -   id: python-use-type-annotations
+    -   id: rst-backticks
+    -   id: rst-directive-colons
+    -   id: rst-inline-touching-normal
+      
+#-   repo: https://github.com/psf/black
+#    rev: 22.3.0
+#    hooks:
+#    -   id: black
+
+-   repo: https://github.com/pycqa/isort
+    rev: 5.10.1
+    hooks:
+    -   id: isort
+        name: isort (python)
+
+
+#-   repo: https://gitlab.com/smop/pre-commit-hooks
+#    rev: v1.0.0
+#    hooks:
+#    -   id: check-poetry
+        
+
+-   repo: https://github.com/PrincetonUniversity/blocklint
+    rev: v0.2.3
+    hooks:
+    -   id: blocklint
+    

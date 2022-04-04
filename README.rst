@@ -31,6 +31,3 @@ Installation
 ------------
 
 Clone it
-
-
-

@@ -1,0 +1,4 @@
+[tool.flake8]
+max-line-length = {{ cookiecutter.line_length }}
+select = ["C, E, F, W, B, B950"]
+extend-ignore = ["E203, E501"]

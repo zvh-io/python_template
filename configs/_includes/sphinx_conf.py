@@ -1,0 +1,140 @@
+# -*- coding: utf-8 -*-
+import os
+import sys
+
+sys.path.insert(0, os.path.abspath('.'))
+
+project = "{{ cookiecutter.project_slug }}"
+copyright = "{{ cookiecutter.copyright_year}}, {{ cookiecutter.full_name }}"
+author = ["{{ cookiecutter.full_name }} <{{ cookiecutter.email }}>"]
+version = "{{ cookiecutter.project_version }}"
+release = "{{ cookiecutter.project_version }}"
+# needs_sphinx = "1.4" #
+# needs_extensions ={} #
+
+extensions = [
+    "numpydoc",
+    "releases",
+    "sphinx-autobuild", 
+    "sphinx-autodoc-annotation", 
+    "sphinx-autodoc-typehints", 
+    "sphinx-git",
+    "sphinx-gitstamp", 
+    "sphinx-intl", 
+    "sphinx-me", 
+    "sphinx-needs", 
+    "sphinx-prompt",  
+    "sphinx-pyreverse", "
+    "sphinx-sitemap", 
+    "sphinxcontrib-autoprogram", 
+    "sphinxcontrib-blockdiag", 
+    "sphinxcontrib-docbookrestapi", 
+    "sphinxcontrib-fulltoc", 
+    "sphinxcontrib-httpdomain", 
+    "Sphinxcontrib-packages", 
+    "sphinxcontrib-programoutput", 
+    "Sphinxcontrib-proof"
+]
+
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+pygments_style = 'sphinx'
+root_doc = 'index'
+smartquotes = True
+smartquotes_action = "qDe"
+smartquotes_excludes = {'languages': ['ja'], 'builders': ['man', 'text']}
+source_suffix = '.rst'
+source_encoding = 'utf-8-sig'
+templates_path = ['_templates']
+todo_include_todos = False
+
+## Internationalization related settings ##
+language = "en"
+locale_dirs = ["locales"]
+gettext_allow_fuzzy_translations = False
+gettext_compact = False
+gettext_uuid = False
+gettext_location = True
+gettext_auto_build = True
+gettext_additional_targets = []
+figure_language_filename = "{root}.{language}{ext}"
+
+## Math related settings ##
+math_number_all = False
+math_eqref_format = "Eq. {number}"
+math_numfig = True
+
+## HTML related settings ##
+html_theme = 'alabaster'
+# html_theme_options = {}
+# html_theme_path = []
+# html_style = ""
+html_title = '<project> v<revision> documentation'
+# html_logo = ""  # Max 200 pixels wide
+# html_favicon = ""
+# html_css_files = ""
+# html_jss_files = ""
+# html_static_path = ['_static']
+# html_extra_path = []
+# html_last_updated_fmt = None
+# html_sidebars = {}
+# html_additional_pages = {}
+# html_domain_indices = True
+# html_use_index = True
+# html_split_index = False
+# html_show_sourcelink = True
+# html_show_sphinx = True
+# html_show_copyright = True
+# html_use_opensearch = ''
+# html_file_suffix = None
+# html_search_language = 'en'
+# html_search_options = {'type': 'default'}
+# html_search_scorer = 'scorer.js'
+htmlhelp_basename = 'testdoc'
+
+## Latex related settings ##
+latex_elements = {
+    # The paper size ('letterpaper' or 'a4paper').
+    #
+    # 'papersize': 'letterpaper',
+
+    # The font size ('10pt', '11pt' or '12pt').
+    #
+    # 'pointsize': '10pt',
+
+    # Additional stuff for the LaTeX preamble.
+    #
+    # 'preamble': '',
+
+    # Latex figure (float) alignment
+    #
+    # 'figure_align': 'htbp',
+}
+
+latex_documents = [
+    (root_doc, 'test.tex', u'test Documentation',
+     u'test', 'manual'),
+]
+
+# latex_logo = None
+# latex_show_pagerefs = False
+# latex_show_urls = False
+# latex_appendices = []
+# latex_domain_indices = True
+
+## Manpage related settings ##
+man_pages = [
+    (root_doc, 'test', u'test Documentation',
+     [author], 1)
+]
+# man_show_urls = False
+
+## Tex related settings ##
+texinfo_documents = [
+    (root_doc, 'test', u'test Documentation',
+     author, 'test', 'One line description of project.',
+     'Miscellaneous'),
+# texinfo_appendices = []
+# texinfo_domain_indices = True
+# texinfo_show_urls = 'footnote'
+# texinfo_no_detailmenu = False
+# texinfo_cross_references = False

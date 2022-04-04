@@ -21,5 +21,3 @@ omit-covered-files = false
 generate-badge = "."
 badge-format = "png"
 badge-style = "flat-square-modified"
-
-

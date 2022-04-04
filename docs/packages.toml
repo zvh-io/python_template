@@ -106,16 +106,17 @@ snoop = ""
 
 ## Document comprehensions
 Jinja2 = ""
+pyhocon = ""
 toml = ""
 
 ## Documentation
 breathe = ""
 interrogate = {extras = ["png"], version = ""}
-numpydoc = ""
-releases = ""
 Sphinx = ""
 
 # Sphinx plugins
+numpydoc = ""
+releases = ""
 sphinx-autobuild = ""
 sphinx-autodoc-annotation = ""
 sphinx-autodoc-typehints = ""
@@ -156,7 +157,7 @@ structlog = ""
 structlog-pretty = ""
 
 ## Testing
-datamodel-code-generator = ""
+datamodel-code-generator = {extras = ["http"], version = ""}
 deal = {extras = ["all"], version = ""}
 Faker = ""
 hypothesis = ""

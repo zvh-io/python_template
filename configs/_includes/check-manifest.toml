@@ -1,0 +1,4 @@
+[tool.check-manifest]
+ignore = []
+ignore-default-rules = false
+ignore-bad-ideas = []
