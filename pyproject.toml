@@ -23,186 +23,122 @@ classifiers = [
 python = "^3.8"
 
 [tool.poetry.dev-dependencies]
-## Build tools
-cython = ""
-flit = ""
-packaging = ""
-pyroma = ""
-setuptools = ""
-setuptools-scm = ""
-twine = ""
-wheel = ""
-
-## Code formatting
-black = ""
-docformatter = ""
-isort = ""
-
-## Code instrumentation
-#line_profiler = ""
-#psutil = ""
-#pyinstrument = ""
-#py-spy = ""
-
-## Code metrics
-#coverage = ""
-#mccabe = ""
-#prospector = ""
-#radon = ""
-#xenon = ""
-
-## Code refactoring
-#MonkeyType = ""
-#pyannotate = ""
-#pyupgrade = ""
-#rope = ""
-
-## Code security
-#atheris = ""
-bandit = ""
-dodgy = ""
-safety = ""
-
-## Code style
-#darglint = ""
-flake8 = ""
-flakeheaven = ""
-mypy = ""
-#pycodestyle = ""
-#pyflakes = ""
-#pylint = ""
-#pylint-flask = ""
-#unimport = ""
-
-# Flake8 plugins
-#cohesion = ""
+psutil = "^5.9.0"
+pyinstrument = "^4.1.1"
+py-spy = "^0.3.11"
+coverage = "^6.3.2"
+radon = "^5.1.0"
+xenon = "^0.9.0"
+MonkeyType = "^22.2.0"
+pyannotate = "^1.2.0"
+pyupgrade = "^2.31.1"
+rope = "^0.23.0"
+cohesion = "^1.0.0"
+flake8-annotations = "^2.8.0"
+flake8-bandit = "^3.0.0"
+flake8-broken-line = "^0.4.0"
+flake8-bugbear = "^22.3.23"
+flake8-builtins = "^1.5.3"
+flake8-coding = "^1.3.2"
+flake8-comprehensions = "^3.8.0"
+flake8-dashboard = "^0.1.4"
+flake8-debugger = "^4.0.0"
+flake8-docstrings = "^1.6.0"
+flake8-eradicate = "^1.2.0"
+flake8-executable = "^2.1.1"
+flake8-fixme = "^1.1.1"
+flake8-functions-names = "^0.3.0"
+flake8-logging-format = "^0.6.0"
+flake8-multiline-containers = "^0.0.18"
+flake8-pep3101 = "^1.3.0"
+flake8-pie = "^0.15.0"
+flake8-pytest-style = "^1.6.0"
+flake8-return = "^1.1.3"
+flake8-rst = "^0.8.0"
+flake8-rst-docstrings = "^0.2.5"
+flake8-quotes = "^3.3.1"
+flake8-simplify = "^0.19.2"
+flake8-SQL = "^0.4.1"
+flake8-todos = "^0.1.5"
+flake8-type-checking = "^1.4.0"
+flake8-variables-names = "^0.0.5"
+pandas-vet = "^0.2.3"
+pydantic = "^1.9.0"
+pydocstyle = "^6.1.1"
+commitizen = "^2.23.0"
+breathe = "^4.33.1"
+interrogate = {extras = ["png"], version = "^1.5.0"}
+numpydoc = "^1.2.1"
+releases = "^1.6.3"
+sphinx-autobuild = "^2021.3.14"
+sphinx-autodoc-annotation = "^1.0-1"
+sphinx-autodoc-typehints = "^1.17.0"
+sphinx-git = "^11.0.0"
+sphinx-gitstamp = "^0.3.2"
+sphinx-intl = "^2.0.1"
+sphinx-me = "^0.3"
+sphinx-prompt = "^1.5.0"
+sphinx-pyreverse = "^0.0.17"
+sphinx-sitemap = "^2.2.0"
+sphinxcontrib-autoprogram = "^0.1.7"
+sphinxcontrib-blockdiag = "^3.0.0"
+sphinxcontrib-fulltoc = "^1.2.0"
+sphinxcontrib-httpdomain = "^1.8.0"
+sphinxcontrib-packages = "^1.0.1"
+sphinxcontrib-programoutput = "^0.17"
+sphinxcontrib-proof = "^1.4.0"
+Pallets-Sphinx-Themes = "^2.0.2"
+sphinx-better-theme = "^0.1.5"
+sphinx-bootstrap-theme = "^0.8.1"
+sphinx-nameko-theme = "^0.0.3"
+sphinx-readable-theme = "^1.3.0"
+sphinx-rtd-theme = "^1.0.0"
+pytest-asyncio = "^0.18.3"
+pytest-bdd = "^5.0.0"
+pytest-benchmark = "^3.4.1"
+pytest-datadir = "^1.3.1"
+pytest-flake8 = "^1.1.1"
+pytest-html = "^3.1.1"
+pytest-lazy-fixture = "^0.6.3"
+pytest-mock = "^3.7.0"
+pytest-mypy = "^0.9.1"
+pytest-randomly = "^3.11.0"
+pytest-structlog = "^0.5"
+pytest-testinfra = "^6.6.0"
+pytest-testmon = "^1.3.1"
+pytest-tornado = "^0.8.1"
+deal = {extras = ["all"], version = "^4.21.1"}
+hypothesis = "^6.41.0"
+flakeheaven = "^0.11.1"
+envparse = "^0.2.0"
+hunter = "^3.4.3"
+snoop = "^0.4.1"
+darglint = "^1.8.1"
+black = "^22.3.0"
+Cython = "^0.29.28"
 dlint = "^0.12.0"
-#flake8-annotations = ""
-#flake8-bandit = ""
-#flake8-broken-line = ""
-#flake8-bugbear = ""
-#flake8-builtins = ""
-#flake8-coding = ""
-#flake8-comprehensions = ""
-#flake8-dashboard = ""
-#flake8-debugger = ""
-#flake8-docstrings = ""
-#flake8-eradicate = ""
-#flake8-executable = ""
-#flake8-fixme = ""
-#flake8-functions-names = ""
-#flake8-logging-format = ""
-#flake8-multiline-containers = ""
-#flake8-pep3101 = ""
-#flake8-pie = ""
-#flake8-pytest-style = ""
-#flake8-return = ""
-#flake8-rst = ""
-#flake8-rst-docstrings = ""
-#flake8-quotes = ""
-#flake8-simplify = ""
-#flake8-SQL = ""
-#flake8-todos = ""
-#flake8-type-checking = ""
-#flake8-variables-names = ""
-#pandas-vet = ""
-#pydantic = ""
-#pydocstyle = ""
-
-## Configuration management
-#check-manifest = ""
-#docker-compose = ""
-dynaconf = ""
-envparse = ""
-python-dotenv = ""
-
-## Continuous integration
-#commitizen = ""
-pre-commit = ""
-tox = ""
-
-## Debugging
-hunter = ""
-snoop = ""
-
-## Document comprehensions
-Jinja2 = ""
-pyhocon = ""
-toml = ""
-
-## Documentation
-#breathe = ""
-#interrogate = {extras = ["png"], version = ""}
-Sphinx = ""
-
-# Sphinx plugins
-#numpydoc = ""
-#releases = ""
-#sphinx-autobuild = ""
-#sphinx-autodoc-annotation = ""
-#sphinx-autodoc-typehints = ""
-#sphinx-git = ""
-#sphinx-gitstamp = ""
-#sphinx-intl = ""
-#sphinx-me = ""
-#sphinx-prompt  = ""
-#sphinx-pyreverse = ""
-#sphinx-sitemap = ""
-#sphinxcontrib-autoprogram = ""
-#sphinxcontrib-blockdiag = ""
-#sphinxcontrib-docbookrestapi = ""
-#sphinxcontrib-fulltoc = ""
-#sphinxcontrib-httpdomain = ""
-#Sphinxcontrib-packages = ""
-#sphinxcontrib-programoutput = ""
-#Sphinxcontrib-proof = ""
-
-# Sphinx themes
-#Pallets-Sphinx-Themes = ""
-#sphinx-better-theme = ""
-#sphinx-bootstrap-theme = ""
-#sphinx-nameko-theme = ""
-#sphinx-readable-theme = ""
-#sphinx-rtd-theme = ""
-
-## Logging
-better-exceptions = ""
-devtools = {extras = ["pygments"], version = ""}
-multistructlog = ""
-pretty-errors = ""
-Pygments = ""
-rich = ""
-structlog = ""
-structlog-pretty = ""
-
-## Testing
-#datamodel-code-generator = {extras = ["http"], version = ""}
-#deal = {extras = ["all"], version = ""}
-#faker = ""
-#hypothesis = ""
-#hypothesis-csv = ""
-#hypothesis-fspaths = ""
-pytest = ""
-#splinter = ""
-
-
-# Pytest plugins
-#pytest-asyncio = ""
-#pytest-bdd = ""
-#pytest-benchmark = ""
-#pytest-datadir = ""
-#pytest-docker = ""
-#pytest-flake8 = ""
-#pytest-html = ""
-#pytest-lazy-fixture = ""
-#pytest-mock = ""
-#pytest-mypy = ""
-#pytest-randomly = ""
-#pytest-splinter = ""
-#pytest-structlog = ""
-#pytest-testinfra = ""
-#pytest-testmon = ""
-#pytest-tornado = ""
+docformatter = "^1.4"
+dodgy = "^0.2.1"
+dynaconf = "^3.1.7"
+pre-commit = "^2.18.1"
+pylint-flask = "^0.6"
+pyroma = "^3.3"
+python-dotenv = "^0.20.0"
+safety = "^1.10.3"
+setuptools-scm = "^6.4.2"
+twine = "^4.0.0"
+unimport = "^0.9.5"
+better-exceptions = "^0.3.3"
+multistructlog = "^2.1.0"
+pretty-errors = "^1.2.25"
+Pygments = "^2.11.2"
+rich = "^12.2.0"
+structlog = "^21.5.0"
+structlog-pretty = "^0.3.0"
+devtools = {extras = ["pygments"], version = "^0.8.0"}
+hypothesis-csv = "^0.3.4"
+hypothesis-fspaths = "^0.1"
+pytest = "^7.1.1"
 
 [tool.poetry.scripts]
 
@@ -253,39 +189,34 @@ subprocess = [
 
 [tool.black]
 line-length = 100
-target-version = ["py38", "py39", "py310", "py311"]
+target-version = ["py38", "py39", "py310"]
 
-#[tool.check-manifest]
-#ignore = []
-#ignore-default-rules = false
-#ignore-bad-ideas = []
+[tool.commitizen]
+name = "cz_conventional_commits"
+version = ""
+version_files = []
+tag_format = ""
+update_changelog_on_bump = false
+annotated_tag = false
+bump_message = ""
+changelog_file = ""
+changelog_incremental = false
+changelog_start_rev = ""
+customize = {}
+use_shortcuts = false
 
-#[tool.commitizen]
-#name = "cz_conventional_commits"
-#version = ""
-#version_files = []
-#tag_format = ""
-#update_changelog_on_bump = false
-#annotated_tag = false
-#bump_message = ""
-#changelog_file = ""
-#changelog_incremental = false
-#changelog_start_rev = ""
-#customize = {}
-#use_shortcuts = false
-
-#style = [
-#    ["qmark", "fg:#ff9d00 bold"],
-#    ["question", "bold"],
-#    ["answer", "fg:#ff9d00 bold"],
-#    ["pointer", "fg:#ff9d00 bold"],
-#    ["highlighted", "fg:#ff9d00 bold"],
-#    ["selected", "fg:#cc5454"],
-#    ["separator", "fg:#cc5454"],
-#    ["instruction", ""],
-#    ["text", ""],
-#    ["disabled", "fg:#858585 italic"]
-#]
+style = [
+    ["qmark", "fg:#ff9d00 bold"],
+    ["question", "bold"],
+    ["answer", "fg:#ff9d00 bold"],
+    ["pointer", "fg:#ff9d00 bold"],
+    ["highlighted", "fg:#ff9d00 bold"],
+    ["selected", "fg:#cc5454"],
+    ["separator", "fg:#cc5454"],
+    ["instruction", ""],
+    ["text", ""],
+    ["disabled", "fg:#858585 italic"]
+]
 
 [tool.flake8]
 max-line-length = 100
@@ -298,41 +229,41 @@ format = "grouped"
 show_source = true
 
 [tool.flakeheaven.plugins]
-#cohesion = ["+*"]
-#darglint = ["+*"]
-#dlint = ["+*"]
-#flake8-annotations = ["+*"]
-#flake8-bandit = ["+*"]
-#flake8-broken-line = ["+*"]
-#flake8-bugbear = ["+*"]
-#flake8-builtins = ["+*"]
-#flake8-coding = ["+*"]
-#flake8-comprehensions = ["+*"]
-#flake8-dashboard = ["+*"]
-#flake8-debugger = ["+*"]
-#flake8-docstrings = ["+*"]
-#flake8-eradicate = ["+*"]
-#flake8-executable = ["+*"]
-#flake8-fixme = ["+*"]
-#flake8-functions-names = ["+*"]
-#flake8-logging-format = ["+*"]
-#flake8-multiline-containers = ["+*"]
-#flake8-pep3101 = ["+*"]
-#flake8-pie = ["+*"]
-#flake8-pytest-style = ["+*"]
-#flake8-return = ["+*"]
-#flake8-rst = ["+*"]
-#flake8-rst-docstrings = ["+*"]
-#flake8-quotes = ["+*"]
-#flake8-simplify = ["+*"]
-#flake8-sql = ["+*"]
-#flake8-todos = ["+*"]
-#flake8-type-checking = ["+*"]
-#flake8-variables-names = ["+*"]
-#pandas-vet = ["+*"]
-#pycodestyle = ["+*"]
-#pyflakes = ["+*", "-F401"]
-#pylint = ["+*"]
+cohesion = ["+*"]
+darglint = ["+*"]
+dlint = ["+*"]
+flake8-annotations = ["+*"]
+flake8-bandit = ["+*"]
+flake8-broken-line = ["+*"]
+flake8-bugbear = ["+*"]
+flake8-builtins = ["+*"]
+flake8-coding = ["+*"]
+flake8-comprehensions = ["+*"]
+flake8-dashboard = ["+*"]
+flake8-debugger = ["+*"]
+flake8-docstrings = ["+*"]
+flake8-eradicate = ["+*"]
+flake8-executable = ["+*"]
+flake8-fixme = ["+*"]
+flake8-functions-names = ["+*"]
+flake8-logging-format = ["+*"]
+flake8-multiline-containers = ["+*"]
+flake8-pep3101 = ["+*"]
+flake8-pie = ["+*"]
+flake8-pytest-style = ["+*"]
+flake8-return = ["+*"]
+flake8-rst = ["+*"]
+flake8-rst-docstrings = ["+*"]
+flake8-quotes = ["+*"]
+flake8-simplify = ["+*"]
+flake8-sql = ["+*"]
+flake8-todos = ["+*"]
+flake8-type-checking = ["+*"]
+flake8-variables-names = ["+*"]
+pandas-vet = ["+*"]
+pycodestyle = ["+*"]
+pyflakes = ["+*", "-F401"]
+pylint = ["+*"]
 
 [tool.interrogate]
 ignore-init-method = true
@@ -366,13 +297,13 @@ use_parentheses = true
 force_single_line = true
 force_sort_within_sections = true
 lexicographical = false
-single_line_exclusion = ['typing',]
+#single_line_exclusion = ['typing',]
 group_by_package = true
 skip_gitignore = true
-skip = []
-extend_skip = []
-skip_glob = []
-extend_skip_blob = []
+#skip = []
+#extend_skip = []
+#skip_glob = []
+#extend_skip_blob = []
 sections = ['FUTURE', 'STDLIB', 'THIRDPARTY', 'FIRSTPARTY', 'LOCALFOLDER']
 import_heading_future = "Future Compatability"
 import_heading_stdlib = "Standard Library"
